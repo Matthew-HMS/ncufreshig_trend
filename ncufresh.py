@@ -48,7 +48,7 @@ for j in range(name_list.__len__()):
         time.sleep(5)
         driver.get(link[index])
         time.sleep(3)
-        report = driver.find_element(By.XPATH, "//*[text()='查看洞察報告' or text()='View insights']")
+        report = driver.find_element(By.XPATH, "//*[text()='查看洞察報告' or text()='View Insights']")
         report.click()
         time.sleep(5)
 
