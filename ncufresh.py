@@ -5,11 +5,11 @@ from selenium.common.exceptions import NoSuchElementException
 import os
 import csv
 
-account = 'ncufresh'
-password = 'ncufreshig2023'
+account = os.getenv('IG_ACCOUNT')
+password = os.getenv('IG_PASSWORD')
 
 options = webdriver.ChromeOptions()
-# options.add_argument('--headless=new')
+options.add_argument('--headless=new')
 driver = webdriver.Chrome(options=options)
 driver.get("https://www.instagram.com/")
 
